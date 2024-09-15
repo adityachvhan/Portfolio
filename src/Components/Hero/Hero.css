@@ -1,0 +1,119 @@
+.hero {
+    padding-top: 120px;
+    margin-top: 70px;
+    padding-bottom: 120px;
+    background: #26272e;
+    color: white;
+    overflow-y: hidden;
+}
+
+.hero-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    animation: FadeIn 0.5s;
+}
+
+.hero-left {
+    flex-basis: 35%;
+}
+
+.hero-left img {
+    width: 100%;
+}
+
+.hero-right {
+    flex-basis: 60%;
+    margin-left: 150px;
+    padding: 30px;
+}
+
+.hero-top-heading {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.hero-main-text {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero-proff{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.surname {
+    color: #fd562a;
+}
+
+.hero-right button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    outline: none;
+    border: 2px solid #fd562a;
+    border-radius: 10px;
+    background: #fd562a;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.hero-right button:last-child {
+    margin-left: 30px;
+    padding: 15px 50px;
+    background: transparent;
+    color: white;
+    transition: 0.5s;
+}
+
+.hero-right button:last-child:hover {
+    background: #fd562a;
+}
+
+
+@media(max-width:700px){
+ 
+    .hero-container {
+       flex-direction: column;
+    }
+
+    .hero-right {
+        margin-left: 0px;
+        margin-top: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .hero-right button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+    
+    }
+    
+    .hero-right button:last-child {
+        margin-left: 10px;
+        padding: 10px 30px;
+    }
+
+    .hero-top-heading {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    
+    .hero-main-text {
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        margin-top: 30px;
+    }
+}
